@@ -1,2 +1,2 @@
 # edgesec.io
-edgesec tool documentation
+edgesec tool documentation website
