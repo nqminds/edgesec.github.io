@@ -23,11 +23,11 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v2
       with:
-          node-version: "14.x"
-          registry-url: "https://registry.npmjs.org"
-            cache: npm
-            cache-dependency-path: |
-              docusaurus/package-lock.json
+        node-version: "14.x"
+        registry-url: "https://registry.npmjs.org"
+          cache: npm
+          cache-dependency-path: |
+            docusaurus/package-lock.json
 
     - name: Install modules (CI-mode)
       run: npm ci
