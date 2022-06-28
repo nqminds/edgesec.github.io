@@ -13,7 +13,7 @@ On Debian/Ubuntu, build dependencies are listed in the
 You can use [`mk-build-deps`](https://manpages.ubuntu.com/manpages/focal/man1/mk-build-deps.1.html)
 to automatically install these build-dependencies.
 
-```bash
+```console
 sudo apt install devscripts # install mk-build-depends
 sudo mk-build-deps --install debian/control
 ```
@@ -24,7 +24,7 @@ Compiling EDGESec is done with CMake.
 
 If you have CMake v3.22+, you can use the following `cmake-presets` to compile EDGESec:
 
-```bash
+```console
 cmake --preset linux # configure EDGESec for Linux
 cmake --build --preset linux -j4 # build EDGESec for Linux using 4 threads
 ctest --preset linux # test EDGESec for Linux
@@ -34,7 +34,7 @@ A useful one-liner is the following, which given a preset, automatically
 configures, compiles (using all cores, but `nice -n19` for lower CPU priority),
 tests (if a test config exists), then installs into the `./tmp` folder.
 
-```bash
+```console
 export PRESET=linux; cmake --preset "$PRESET" && nice -n19 cmake --build --preset "$PRESET" -j=$(nproc) && ( ctest --list-presets | grep "\"$PRESET\"" ) && ctest --preset "$PRESET"; cmake --install "./build/$PRESET" --prefix "./tmp/$PRESET"
 ```
 
@@ -44,7 +44,7 @@ For older versions of CMake, or for manual configuration, please see the next he
 
 Configure `cmake` in the `build/` directory by running the following:
 
-```bash
+```console
 # or for old versions of cmake, do: mkdir build/ && cd build/ && cmake ..
 cmake -S . -B build
 ```
@@ -55,14 +55,14 @@ The configure stage will download some of the EDGESec dependencies, so this may 
 
 To build, you can then run:
 
-```bash
+```console
 # or for old versions of cmake, do: cd build/ && make
 cmake --build build/
 ```
 
 or to built on multiple core run:
 
-```bash
+```console
 cmake --build build/ -j4
 ```
 
@@ -74,7 +74,7 @@ After succesful compilation the binary will be located in `./build/src` folder.
 
 You can use the following to also install files into `build/edgesec-dist`:
 
-```bash
+```console
 # Can do make and install in one step with
 # `cmake --build build/ --target install -j4`
 cmake --install build/
@@ -84,14 +84,14 @@ cmake --install build/
 
 Set `-DCMAKE_INSTALL_PREFIX=<YOUR-LOCATION-HERE>` to build for a different location:
 
-```bash
+```console
 cmake -B build/ -S . -DCMAKE_INSTALL_PREFIX=/tmp/example-build
 cmake --build build/ --target install -j4
 ```
 
 This will also automatically update `config.ini` to have all paths point to the installed location. You can also use the following to install to a different location than the one you built for.
 
-```bash
+```console
 # Will update config.ini, but will not update RPATHS!!!
 cmake --install build/ --prefix <new-location>
 ```
@@ -106,7 +106,7 @@ Please configure cmake with `-DCMAKE_INSTALL_PREFIX` and recompile if you want t
 
 To compile the tests use:
 
-```bash
+```console
 cmake -B build/ -S . # configure CMAKE
 cmake --build build/ -j4 # or make -j4
 cmake --build build/ --target test -j4 # or `make test`
