@@ -1,5 +1,5 @@
 module.exports = {
-  title: "EDGESec",
+  title: "EDGESEC",
   tagline: "Secure IoT router implementation",
   url: "https://nqminds.github.io",
   baseUrl: "/", // usually your repo name, must contain a trailing and starting slash
@@ -8,7 +8,7 @@ module.exports = {
   projectName: "edgesec", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "EDGESec",
+      title: "EDGESEC",
       logo: {
         alt: "NQM Docusaurus Template Logo",
         src: "img/network.svg",

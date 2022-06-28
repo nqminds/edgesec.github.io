@@ -3,7 +3,7 @@ slug: commands
 title: Control Commands
 ---
 
-## EDGESec Commands
+## EDGESEC Commands
 
 ### PING_SUPERVISOR
 

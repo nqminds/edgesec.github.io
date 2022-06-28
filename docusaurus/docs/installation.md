@@ -3,7 +3,7 @@ slug: installation
 title: Installation
 ---
 
-The most up to date releases of the precompiled installation packages for amd64 and arm64 architectures on a Debian OS can be downloaded from [here](https://github.com/nqminds/EDGESec/releases).
+The most up to date releases of the precompiled installation packages for amd64 and arm64 architectures on a Debian OS can be downloaded from [here](https://github.com/nqminds/EDGESEC/releases).
 
 ## ARM64 - Raspberry Pi
 

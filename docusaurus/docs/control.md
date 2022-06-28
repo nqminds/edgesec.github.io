@@ -5,7 +5,7 @@ title: Network Control
 
 ## The Network Control architecture
 
-The network architecture of the EDGESec tool consist of several services that create and manage connected IoT devices. The below diagram depicts the architecture, which consists of six services:
+The network architecture of the EDGESEC tool consist of several services that create and manage connected IoT devices. The below diagram depicts the architecture, which consists of six services:
 
 - Subnet service
 - Supervisor service

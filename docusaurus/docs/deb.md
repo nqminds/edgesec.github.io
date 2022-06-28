@@ -5,11 +5,11 @@ title: Creating a .deb
 
 ## Using GitHub Actions (recommended)
 
-1. Update [`debian/changelog`](https://github.com/nqminds/EDGESec/debian/changelog) and make a new version.
-2. [Create a new GitHub Release](https://github.com/nqminds/EDGESec/releases/new),
+1. Update [`debian/changelog`](https://github.com/nqminds/EDGESEC/debian/changelog) and make a new version.
+2. [Create a new GitHub Release](https://github.com/nqminds/EDGESEC/releases/new),
   using the branch where you pushed the updated changelog.
 3. After creating a Release (and when it's **NOT** a draft),
-  the [create-debs.yml](https://github.com/nqminds/EDGESec/actions/workflows/create-debs.yml)
+  the [create-debs.yml](https://github.com/nqminds/EDGESEC/actions/workflows/create-debs.yml)
   will automatically compile the `.deb` files, and upload them as
   part of the Release you made.
 
@@ -113,7 +113,7 @@ If you want to use podman
 (e.g. since you're using elementary OS, or `pbuilder` doesn't work since you don't have `chroot` support),
 you can use `debuild` manually.
 
-Install .deb build dependencies, as well as the build depenencies for EDGESec (see README.md)
+Install .deb build dependencies, as well as the build depenencies for EDGESEC (see README.md)
 
 ```bash
 sudo apt install gnupg linux-headers-generic ubuntu-dev-tools apt-file -y

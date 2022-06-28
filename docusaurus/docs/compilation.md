@@ -8,7 +8,7 @@ The codebase can be clone from the Github [repo](https://github.com/nqminds/edge
 ## Dependencies
 
 On Debian/Ubuntu, build dependencies are listed in the
-[`debian/control`](https://github.com/nqminds/EDGESec/blob/main/debian/control) file.
+[`debian/control`](https://github.com/nqminds/EDGESEC/blob/main/debian/control) file.
 
 You can use [`mk-build-deps`](https://manpages.ubuntu.com/manpages/focal/man1/mk-build-deps.1.html)
 to automatically install these build-dependencies.
@@ -20,14 +20,14 @@ sudo mk-build-deps --install debian/control
 
 ## Compile & Build
 
-Compiling EDGESec is done with CMake.
+Compiling EDGESEC is done with CMake.
 
-If you have CMake v3.22+, you can use the following `cmake-presets` to compile EDGESec:
+If you have CMake v3.22+, you can use the following `cmake-presets` to compile EDGESEC:
 
 ```console
-cmake --preset linux # configure EDGESec for Linux
-cmake --build --preset linux -j4 # build EDGESec for Linux using 4 threads
-ctest --preset linux # test EDGESec for Linux
+cmake --preset linux # configure EDGESEC for Linux
+cmake --build --preset linux -j4 # build EDGESEC for Linux using 4 threads
+ctest --preset linux # test EDGESEC for Linux
 ```
 
 A useful one-liner is the following, which given a preset, automatically
@@ -49,7 +49,7 @@ Configure `cmake` in the `build/` directory by running the following:
 cmake -S . -B build
 ```
 
-The configure stage will download some of the EDGESec dependencies, so this may take a while.
+The configure stage will download some of the EDGESEC dependencies, so this may take a while.
 
 ### Building
 
