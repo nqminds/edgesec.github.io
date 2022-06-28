@@ -1,7 +1,7 @@
 module.exports = {
   title: "EDGESEC",
   tagline: "Secure IoT router implementation",
-  url: "https://nqminds.github.io",
+  url: "https://edgesec.info",
   baseUrl: "/", // usually your repo name, must contain a trailing and starting slash
   favicon: "img/network.svg",
   organizationName: "nqmcyber", // Usually your GitHub org/user name.
