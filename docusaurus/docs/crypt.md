@@ -46,9 +46,9 @@ The `value` and `iv` are base64 encoded.
 Each row of the store DB contains the `id` of the key that was used to encrypt/decrypt the `value`. The encryption algorithm used is AES 256 CBC.
 
 # Secure element
-In order to enable the use of secure element one needs to set the `USE_CRYPTO_SERVICE` and `USE_*_HSM` to `ON`. `USE_*_HSM` corresponds to a particular implementation of the secure element API.
+In order to enable the use of secure element one needs to set the `USE_CRYPTO_SERVICE` and `USE_*_HSM`,  which corresponds to a particular implementation of the secure element API.
 
-In order to add an aditional implementation of a secure hardware element one can use the generic driver interface `generec_hsm_drive.h` as a temeplate. The generic drive interface defines the context:
+In order to add an aditional implementation of a secure hardware element one can use the generic driver interface `generec_hsm_drive.h` as a template. The generic drive interface defines the context:
 
 ```c
 struct hsm_context {
