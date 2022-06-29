@@ -28,6 +28,11 @@ module.exports = {
           position: "left",
         },
         {
+          to: "doxygen/", // part of the static folder, run doxygen first
+          label: "Doxygen C API",
+          position: "left",
+        },
+        {
           // WARNING, if you change routeBasePath of docs, you should change this as well
           to: "docs/about",
           label: "About",
