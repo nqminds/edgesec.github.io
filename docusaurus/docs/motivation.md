@@ -1,6 +1,6 @@
 ---
 slug: /
-title: EDGESEC Intro
+title: Motivation
 ---
 
 EDGESEC defines a new architecture and toolset for edge based routers addressing fundamental security weaknesses that impact current IP and IoT router implementations.

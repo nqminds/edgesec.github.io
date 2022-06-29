@@ -1,6 +1,6 @@
 ---
 slug: capture
-title: Network Capture
+title: Capture Service
 ---
 
 ## The Network Capture architecture

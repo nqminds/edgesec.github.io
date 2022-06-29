@@ -1,6 +1,6 @@
 ---
 slug: control
-title: Network Control
+title: Network Control Service
 ---
 
 ## The Network Control architecture
