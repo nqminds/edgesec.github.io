@@ -14,7 +14,7 @@ where `supervisorControlPort` sets the UDP port and `supervisorControlPath` sets
 ```bash
 echo -n "GET_MAP 11:22:33:44:55:66" | nc -uU /tmp/edgesec-control-server -w2 -W1.
 ```
-The command and the parameters are delimited by spaces. The reply of a supervisor command can be `OK`, `FAIL` or command specific output.
+The command and the parameters are delimited by spaces. The reply of a supervisor command can be `OK`, `FAIL` or command specific output. Every command reply is newline delimited.
 
 The supervisor service implements the followig sets of commands:
 ```c
@@ -145,26 +145,80 @@ Output: `OK` - on success, `FAIL` - on failure.
 
 ## GET_MAP command
 
-Returns the connection details for all device.
+Returns the connection details for a device.
 
 Usage:
 ```
-GET_MAP
+GET_MAP mac_address
 ```
+where `mac_address` is the MAC address.
 
-Output: on success it returns a new line delimited strings with the following format
+Output: on success it returns a strings with the following format
 ```
 allowed, mac, primary, secondary, vlanid, nat, label, id, len, timestamp, status
 ```
-where `allowed` is `a` for accept or `d` for denied, `mac` is the MAC address, `primary` is the primary allocated IP address, `secondary` is the secondary allocated IP address, `vlanid` is the allocated VLAN ID, `nat` is the internet access flag for the device, `label` is the assigned label for the devices, `len` is the WIFI password length, `timestamp` is the timestamp (64 bit) when the devices joined the WIFI AP and `status` is the connection status (`1` for connected and `2` for disconnected).
-
-, `FAIL` - on failure.
+where `allowed` is `a` for accept or `d` for denied, `mac` is the MAC address, `primary` is the primary allocated IP address, `secondary` is the secondary allocated IP address, `vlanid` is the allocated VLAN ID, `nat` is the internet access flag for the device, `label` is the assigned label for the devices, `len` is the WIFI password length, `timestamp` is the timestamp (64 bit) when the devices joined the WIFI AP and `status` is the connection status (`1` for connected and `2` for disconnected). The command returns `FAIL` on failure.
 
 ## GET_ALL command
+Similar to `GET_MAP` command except that it sends the connection details for all devices.
+Usage:
+```
+GET_ALL
+```
+
+Output: on success it returns a list fo newline delimited strings with the same format as in the `GET_MAP` command. The command returns `FAIL` on failure.
+
 ## ADD_BRIDGE command
+
+Adds a bridge between two devices.
+
+Usage:
+
+```
+ADD_BRIDGE src dst
+```
+where `src` is the MAC address for the source and `dst` is the MAC address for the destination.
+
+Output: `OK` - on success, `FAIL` - on failure.
+
 ## REMOVE_BRIDGE command
+
+Removes a bridge between two devices.
+
+Usage:
+
+```
+REMOVE_BRIDGE src dst
+```
+where `src` is the MAC address for the source and `dst` is the MAC address for the destination.
+
+Output: `OK` - on success, `FAIL` - on failure.
+
 ## CLEAR_BRIDGE command
+
+Clears all the assigned bridges for a device.
+
+Usage:
+
+```
+CLEAR_BRIDGE mac_address
+```
+where `mac_address` is the MAC address for the device.
+
+Output: `OK` - on success, `FAIL` - on failure.
+
 ## GET_BRIDGES command
+
+Returns all the assigned bridges.
+
+Usage:
+
+```
+GET_BRIDGES
+```
+
+Output: a list of newline delimited strings with the format `src,dst`, where `src` is the source MAC address and `dst` is the destination MAC address. The command returns `FAIL` on failure.
+
 ## REGISTER_TICKET command
 ## CLEAR_PSK command
 ## PUT_CRYPT command
@@ -176,91 +230,6 @@ where `allowed` is `a` for accept or `d` for denied, `mac` is the MAC address, `
 ## ENCRYPT_BLOB command
 ## DECRYPT_BLOB command
 ## SIGN_BLOB command
-
-
-```
-ACCEPT_MAC mac_address vlanid
-```
-
-### DENY_MAC
-
-Usage:
-
-```
-DENY_MAC mac_address
-```
-
-### ADD_NAT
-
-Usage:
-
-```
-ADD_NAT mac_address
-```
-
-### REMOVE_NAT
-
-Usage:
-
-```
-REMOVE_NAT mac_address
-```
-
-### ASSIGN_PSK
-
-Usage:
-
-```
-ASSIGN_PSK mac_address password
-```
-
-### GET_MAP
-
-Usage:
-
-```
-GET_MAP mac_address
-```
-
-### GET_ALL
-
-Usage:
-
-```
-GET_ALL
-```
-
-### ADD_BRIDGE
-
-Usage:
-
-```
-ADD_BRIDGE mac_address_src mac_address_dst
-```
-
-### REMOVE_BRIDGE
-
-Usage:
-
-```
-REMOVE_BRIDGE mac_address_src mac_address_dst
-```
-
-### CLEAR_BRIDGE
-
-Usage:
-
-```
-CLEAR_BRIDGE mac_address
-```
-
-### GET_BRIDGES
-
-Usage:
-
-```
-GET_BRIDGES
-```
 
 ### REGISTER_TICKET
 
