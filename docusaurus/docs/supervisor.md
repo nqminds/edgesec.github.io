@@ -369,7 +369,7 @@ Output: the encrypted url base64 encoded blob, `FAIL` - on failure.
 
 ## DECRYPT_BLOB command
 
-Dencrypt a blob of data using a stored private key and initial value.
+Decrypt a blob of data using a stored private key and initial value.
 
 Usage:
 
