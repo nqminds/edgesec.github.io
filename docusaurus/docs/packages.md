@@ -152,3 +152,24 @@ Now the deb should exist in the folder above this folder, e.g. `cd ..`.
     with the version you want, then rebuild the `.deb`.
 
 ## OpenWRT Package
+
+`edgesec` for OpenWRT can be built by including the [Manysecured OpenWRT package feed](https://github.com/nqminds/manysecured-openwrt-packages) in your OpenWRT toolchain.
+
+Follow the instructions in the
+[OpenWRT docs on how to setup the OpenWRT build system](https://openwrt.org/docs/guide-developer/toolchain/buildsystem_essentials).
+If you only want to build the edgesec package (not an image), it may be faster to download a
+[pre-built SDK](https://openwrt.org/docs/guide-developer/toolchain/using_the_sdk).
+
+Next, edit `feeds.conf.default` to add the ManySecured OpenWRT package feed.
+
+Finally, run `./scripts/feeds update -a` to fetch the package lists and `./scripts/feeds install edgesec` to configure
+edgesec for compilation. Finally, to compile `edgesec`, run:
+
+```bash
+make
+# use make -j15 to run with 15 threads
+# use nice -n19 make -j15 to run with low CPU priority
+# use make V=scw to view warnings when compiling for debugging
+```
+
+You should find the edgesec `.ipk` file in `bin/packages`.
