@@ -1,19 +1,21 @@
 ---
-slug: deb
-title: Creating a .deb
+slug: packages
+title: Packages Assembly
 ---
 
-## Using GitHub Actions (recommended)
+## Debian Package
+
+### Using GitHub Actions (recommended)
 
 1. Update [`debian/changelog`](https://github.com/nqminds/EDGESEC/debian/changelog) and make a new version.
 2. [Create a new GitHub Release](https://github.com/nqminds/EDGESEC/releases/new),
-  using the branch where you pushed the updated changelog.
+   using the branch where you pushed the updated changelog.
 3. After creating a Release (and when it's **NOT** a draft),
-  the [create-debs.yml](https://github.com/nqminds/EDGESEC/actions/workflows/create-debs.yml)
-  will automatically compile the `.deb` files, and upload them as
-  part of the Release you made.
+   the [create-debs.yml](https://github.com/nqminds/EDGESEC/actions/workflows/create-debs.yml)
+   will automatically compile the `.deb` files, and upload them as
+   part of the Release you made.
 
-## Build Environment
+### Build Environment
 
 The recommended way of building a `.deb` is using the software `pbuilder`.
 
@@ -26,7 +28,7 @@ installing into a `chroot` environment.
 Additionally, you also need access to `chroot`, so `pbuilder` does not work
 in a container like `docker`/`podman`.
 
-### PBuild
+#### PBuild
 
 Install build dependencies:
 
@@ -58,12 +60,13 @@ pdebuild --debbuildopts "-us -uc"
 ```
 
 The meaning of the options are:
+
 - `-debbuildopts <debbuild_opts>`: Options to pass to `debbuild`. See `debbuild` options above in the [**Podman**](#podman) section.
   - `"-us -uc"` means do not sign the source package and `.changes` file.
 
 By default, the `.deb` file will be located in `/var/cache/pbuilder/result/`.
 
-### Cross-compiling
+#### Cross-compiling
 
 First of all, install `pbuilder`, which automatically downloads dependencies
 and does the cross-compiling for you.
@@ -107,7 +110,7 @@ pdebuild --debbuildopts "-us -uc" -- --override-config --distribution focal --mi
 
 By default, the `.deb` file will be located in `/var/cache/pbuilder/result/`.
 
-### Podman
+#### Podman
 
 If you want to use podman
 (e.g. since you're using elementary OS, or `pbuilder` doesn't work since you don't have `chroot` support),
@@ -131,7 +134,7 @@ debuild -us -uc
 
 Now the deb should exist in the folder above this folder, e.g. `cd ..`.
 
-## Editing the deb
+### Editing the deb
 
 - Beware of dependencies!
   The `Depends: ${shlibs:Depends}` line in `debian/control` means we automatically
@@ -140,6 +143,7 @@ Now the deb should exist in the folder above this folder, e.g. `cd ..`.
   However, since we bundle in some shared libs, we must ignore these in `debian/control`,
   using the `-l` flag to `dh_shlibdeps`.
   This will tell `dh_shlibdeps` that a folder is our own private shared libs folder.
+
 - Build dependencies:
   - If we use `git`, make sure you also add `ca-certificates`, otherwise you'll get
     invalid certificate errors when doing git clones with `https`.
@@ -149,7 +153,7 @@ Now the deb should exist in the folder above this folder, e.g. `cd ..`.
 
 ## OpenWRT Package
 
-edgesec for OpenWRT can be built by including the [Manysecured OpenWRT package feed](https://github.com/nqminds/manysecured-openwrt-packages) in your OpenWRT toolchain.
+`edgesec` for OpenWRT can be built by including the [Manysecured OpenWRT package feed](https://github.com/nqminds/manysecured-openwrt-packages) in your OpenWRT toolchain.
 
 Follow the instructions in the
 [OpenWRT docs on how to setup the OpenWRT build system](https://openwrt.org/docs/guide-developer/toolchain/buildsystem_essentials).

@@ -25,7 +25,7 @@ The compatible hardware secure storage modules:
 
 EDGESEC relies on VLAN tagging to separate the network into individual subnets,
 allowing control of communication between devices on separate subnets
-(see [Network Control](./control.md)).
+(see [Network Management](./management.md)).
 
 Many USB WiFi modems do not support Linux, let alone VLAN tagging.
 

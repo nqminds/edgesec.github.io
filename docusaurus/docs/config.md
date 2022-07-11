@@ -22,8 +22,9 @@ execRadius = true
 execDhcp = true
 execCapture = true
 execMdnsForward = true
-execIptables = true
+execFirewall = true
 setIpForward = true
+connectionDbPath = "./connection.sqlite"
 cryptDbPath = "./crypt.sqlite"
 pidFilePath = "/var/run/edgesec.pid"
 
@@ -42,11 +43,11 @@ supervisorControlPath = "/tmp/edgesec-control-server"
 apBinPath = "./hostapd"
 apFilePath = "/tmp/hostapd.conf"
 apLogPath = "/tmp/hostapd.log"
-interface = "wifiap0"
+interface = "wlan0"
+device = "radio1"
 vlanTaggedInterface = ""
 ssid = "IOTH_TEST"
 wpaPassphrase = "1234554321"
-bridge = "br0"
 driver = "nl80211"
 hwMode = "g"
 channel = 11
@@ -58,7 +59,6 @@ rsnPairwise = "CCMP"
 ctrlInterface = "/var/run/hostapd"
 macaddrAcl = 2
 dynamicVlan = 1
-vlanBridge = "br"
 vlanFile = "/tmp/hostapd.vlan"
 loggerStdout = -1
 loggerStdoutLevel = 0
@@ -76,7 +76,11 @@ serverMask = 32
 secret = "radius"
 
 [nat]
-natInterface = "enp2s0"
+natBridge = ""
+natInterface = "enx8cae4cfd2f72"
+
+[firewall]
+firewallBinPath = ""
 
 [dns]
 servers = "8.8.4.4,8.8.8.8"
@@ -102,6 +106,8 @@ dhcpRange9 = "9,10.0.9.2,10.0.9.254,255.255.255.0,24h"
 dhcpRange10 = "10,10.0.10.2,10.0.10.254,255.255.255.0,24h"
 
 [interfaces]
+bridgePrefix = "br"
+interfacePrefix = "br"
 if0 = "0,10.0.0.1,10.0.0.255,255.255.255.0"
 if1 = "1,10.0.1.1,10.0.1.255,255.255.255.0"
 if2 = "2,10.0.2.1,10.0.2.255,255.255.255.0"
@@ -120,17 +126,17 @@ The configuration file is based on the `ini` file type format. Each parameter in
 - _[system]_
 - _[capture]_
 - _[supervisor]_
-- _[hostapd]_
+- _[ap]_
 - _[radius]_
 - _[nat]_
 - _[dns]_
+- _[firewall]_
 - _[dhcp]_
-- _[connections]_
 - _[interfaces]_
 
 ## [system] group
 
-The system group contains all the parameters that are reponsible to configure the `edgesec` system tool paths, the hashes of the system binaries and tool flags.
+The system group contains all the parameters that are reponsible to configure the `edgesec` system tool paths and running of services.
 
 ### binPath (string)
 
@@ -200,17 +206,25 @@ If set to `true`, `edgesec` will execute the `iptables` command.
 
 If set to true `edgesec` will set the ip forward os system param.
 
+### connectionDbPath (string)
+
+The absolute path to the `connection` SQLite db.
+
 ### cryptDbPath (string)
 
-The path to the `crypt` sqlite db.
+The absolute path to the `crypt` SQLite db.
 
 ### pidFilePath (string)
 
-The path to the edgesec PID file.
+The absolute path to the `edgesec` PID file.
 
 ## [capture] group
 
 The capture group contains all the parameters that are reponsible to configure the `capture` app service.
+
+### captureDbPath (string)
+
+The absolute path to the `capture` SQLite db used by the middlewares.
 
 ### filter (string)
 
@@ -228,26 +242,6 @@ The timeout in milliseconds to read a packet. The default value is 10.
 
 If set to `true` the capture interface is set to immediate mode. The default value is `false`.
 
-### dbSync (boolean)
-
-If set to true the sqlite packets db will be synced
-
-### dbSyncAddress (string)
-
-The web address for sqlite syncing
-
-### dbSyncPort (number)
-
-The port of the web address for sqlite syncing
-
-### syncCaPath (string)
-
-The path to the certificate authority file used for gRPC syncing
-
-### command (string)
-
-The UNIX domain command used by the capture service
-
 ## [supervisor] group
 
 The supervisor group defines the parameters to run the supervisor service.
@@ -258,7 +252,7 @@ The supervisor server control port number.
 
 ### supervisorControlPath (string)
 
-The absolute path to the UNIX domain socket used by the supervisor service.
+The absolute path to the UNIX domain socket used by the `supervisor` service.
 
 ## [ap] group
 
@@ -280,6 +274,10 @@ Absolute path to the `hostapd` log file. If empty no log file is generated
 
 Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf)
 
+### device (string)
+
+The WIFI device name for OpenWRT systems.
+
 ### vlanTaggedInterface (string)
 
 Interface name for vlan tagging
@@ -289,10 +287,6 @@ Interface name for vlan tagging
 Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf)
 
 ### wpaPassphrase (string)
-
-Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf)
-
-### bridge (string)
 
 Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf)
 
@@ -337,10 +331,6 @@ Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.co
 Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf)
 
 ### dynamicVlan (integer)
-
-Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf)
-
-### vlanBridge (string)
 
 Inherited from [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf)
 
@@ -402,11 +392,15 @@ The RADIUS server password used by the clients.
 
 ## [nat] group
 
-The nat group defines the parameter for NAT interface.
+The nat group defines the parameter for the interface to access the external network.
+
+### natBridge (string)
+
+For OpenWRT systems specified the bridge name for external network access.
 
 ### natInterface (string)
 
-The NAT interface name.
+The external network interface name.
 
 ## [dns] group
 
@@ -427,6 +421,14 @@ If set to `true` the mdns service will reflect IP6 mdns packets.
 ### mdnsFilter (string)
 
 The `mdns` service filter string used by pcap library to track internal IP connections. The filter is based on the `interface` IP addresses.
+
+## [firewall] group
+
+Configres the `firewall` module.
+
+### firewallBinPath (string)
+
+The absolute path to the firewal configuration executable (specified for OpenWRT systems).
 
 ## [dhcp] group
 
@@ -468,9 +470,17 @@ vlanid,ip_low,ip_up,mask,time
 
 The interfaces group defines the parameters for WiFi subnet interfaces.
 
+### bridgePrefix (string)
+
+The bridge prefix for the VLAN interfaces used for OpenWRT systems.
+
+### interfacePrefix (string)
+
+The interface prefix for the VLAN interfaces.
+
 ### ifi (string)
 
-The `if` indexed by `i≥0` defines the network interfaces for a particular subnet. It has the following format:
+The `if` indexed by `i≥0` defines the VLAN interfaces for a particular subnet. It has the following format:
 
 ```
 vlanid,ip0,ipn,mask
