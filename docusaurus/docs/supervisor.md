@@ -185,7 +185,7 @@ Usage:
 GET_ALL
 ```
 
-Output: on success it returns a list fo newline delimited strings with the same format as in the `GET_MAP` command. The command returns `FAIL` on failure.
+Output: on success it returns a list of newline delimited strings with the same format as in the `GET_MAP` command. The command returns `FAIL` on failure.
 
 ## ADD_BRIDGE command
 
