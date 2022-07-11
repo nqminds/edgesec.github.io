@@ -113,7 +113,8 @@ struct capture_middleware example_middleware = {
 ```
 Then the user needs to add the option `option(USE_EXAMPLE_MIDDLEWARE "Use the example middleware" ON)` in the root `CMakeLists.txt` and subsequently add the lines:
 ```cmake
-add_subdirectory(./middlewares/examaple_middleware)
+# write your CMakeLists.txt file to compile your middleware
+add_subdirectory(./middlewares/example_middleware)
 if (USE_EXAMPLE_MIDDLEWARE)
   edgesecAddCaptureMiddleware(MIDDLEWARE_TARGET example_middleware MIDDLEWARE_STRUCT example_middleware)
 endif ()
