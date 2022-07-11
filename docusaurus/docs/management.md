@@ -20,7 +20,11 @@ The subnet configuration is given in `config.ini` as follows:
 
 ```ini
 [interfaces]
+# Used on OpenWRT systems to define the bridge prefix
 bridgePrefix = "br"
+# The prefix for the interface name that corresponds to a VLAN,
+# for instance for VLAN 2 and `interfacePrefix = "br"` 
+# the corresponding interface will be `br2`.
 interfacePrefix = "br"
 if0 = "0,10.0.0.1,10.0.0.255,255.255.255.0"
 if1 = "1,10.0.1.1,10.0.1.255,255.255.255.0"
@@ -34,10 +38,7 @@ if8 = "8,10.0.8.1,10.0.8.255,255.255.255.0"
 if9 = "9,10.0.9.1,10.0.9.255,255.255.255.0"
 if10 = "10,10.0.10.1,10.0.10.255,255.255.255.0"
 ```
-
-where `bridgePrefix` parameter is used on OpenWRT systems to define the bridge prefix, `interfacePrefix` is the prefix for the interface name that corresponds to a VLAN. For instance for VLAN 2 and `interfacePrefix = "br"` the corresponding interface will be `br2`.
-
-`ifn` key enumerates parameters for each interface that will be created by the subnet service, where all parameters are separated by commas. The first parameter is the VLAN ID, the second parameter is the gateway IP, the third parameter is the broadcast IP and the fourth parameter is the netmask. For instance given `if8 = "8,10.0.8.1,10.0.8.255,255.255.255.0"` and `interfacePrefix = "br"` the created interface `br8` has the following parameters:
+where `ifn` key enumerates parameters for each interface that will be created by the subnet service, where all parameters are separated by commas. The first parameter is the VLAN ID, the second parameter is the gateway IP, the third parameter is the broadcast IP and the fourth parameter is the netmask. For instance given `if8 = "8,10.0.8.1,10.0.8.255,255.255.255.0"` and `interfacePrefix = "br"` the created interface `br8` has the following parameters:
 
 ```console
 $ ip a show dev br8
@@ -61,15 +62,20 @@ The `config.ini` parameters for the RADIUS server are as follows:
 
 ```ini
 [radius]
+# The UDP port for the RADIUS server
 port = 1812
+# The IP of the client (in our case it is the software AP) 
+# that will connect to the RADIUS server
 clientIP = "127.0.0.1"
+# The netmask of the client
 clientMask = 32
+# The IP of the RADIUS server to which it binds to
 serverIP = "127.0.0.1"
 serverMask = 32
+# The key used to encrypt the communication between the 
+# client and RADIUS server
 secret = "radius"
 ```
-
-where `port` is the UDP port for the RADIUS server, `clientIP` denotes the IP of the client (in our case it is the software AP) that will connect to the RADIUS server, `clientMask` is the netmask of the client, `serverIP` denotes the IP of the RADIUS server to which it binds to and `secret` is the parameter used to encrypt the communication between the client and RADIUS server.
 
 ## Software AP
 
@@ -79,9 +85,13 @@ The `config.ini` parameters for the sofware AP are as follows:
 
 ```ini
 [ap]
+# The absolute path to `hostapd` binary
 apBinPath = "./hostapd"
+# The absolute path to the generated `hostapd` configuration file
 apFilePath = "/tmp/hostapd.conf"
+# The absolute path to the `hostapd` log file
 apLogPath = "/tmp/hostapd.log"
+# The parameter correspoding to the interface assigned for the WIFI modem
 interface = "wlan0"
 device = "radio1"
 vlanTaggedInterface = ""
@@ -106,8 +116,7 @@ loggerSyslogLevel = 0
 ignoreBroadcastSsid = 0
 wpaPskRadius = 2
 ```
-
-where `apBinPath` is the absolute path to `hostapd` binary, `apFilePath` is the absolute path to the generated `hostapd` configuration file, `apLogPath` is the absolute path to the `hostapd` log file and `interface` is the parameter correspoding to the interface assigned for the WIFI modem. For OpenWRT systems `apBinPath=/sbin/wifi` points to the WIFI configuration script and `device = "radio1"` is the parameter denoting the index of the radio used to configure the WIFI modem. The name of the WIFI AP is given by the paremeter `ssid`. If `generateSsid` from `config.ini` is set ot `true`, the `ssid` parameter will be assign to the hostname of the router. The default encryption key for the WIFI is given by the parameter `wpaPassphrase`. This encryption key will be shared by all connected WIFI devices, if the RADIUS server doesn't assign a different encryption key for a specific device.
+where for OpenWRT systems `apBinPath=/sbin/wifi` points to the WIFI configuration script and `device = "radio1"` is the parameter denoting the index of the radio used to configure the WIFI modem. The name of the WIFI AP is given by the paremeter `ssid`. If `generateSsid` from `config.ini` is set ot `true`, the `ssid` parameter will be assign to the hostname of the router. The default encryption key for the WIFI is given by the parameter `wpaPassphrase`. This encryption key will be shared by all connected WIFI devices, if the RADIUS server doesn't assign a different encryption key for a specific device.
 
 All the remaining parameters `vlanTaggedInterface`, `hwMode`, `channel`, `wmmEnabled`, `authAlgs`, `wpa`, `wpaKeyMgmt`, `rsnPairwise`, `ctrlInterface`, `macaddrAcl`, `dynamicVlan`, `vlanFile`, `loggerStdout`, `loggerStdoutLevel`, `loggerSyslog `, `loggerSyslogLevel`, `ignoreBroadcastSsid` and `wpaPskRadius` are similar to the ones defined for [hostapd.conf](https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf).
 
@@ -121,9 +130,16 @@ The `config.ini` parameteres for the DHCP service are as follows:
 
 ```ini
 [dhcp]
+# The absolute path to the dnsmasq executable 
+# (for OpenWRT systems this path is /etc/init.d/dnsmasq)
 dhcpBinPath = "/usr/sbin/dnsmasq"
+# The absolute path to the dnsmasq configuration file 
+# (for non OpenWRT this file is generated by edgesec)
 dhcpConfigPath = "/tmp/dnsmasq.conf"
+# The absolute path to the IP leases file
 dhcpScriptPath = "/tmp/dnsmasq_exec.sh"
+# The absolute path to the DHCP control script file, which has the role of 
+# sending the allocated IP address to the edgesec
 dhcpLeasefilePath = "/tmp/dnsmasq.leases"
 dhcpRange0 = "0,10.0.0.2,10.0.0.254,255.255.255.0,24h"
 dhcpRange1 = "1,10.0.1.2,10.0.1.254,255.255.255.0,24h"
@@ -137,8 +153,9 @@ dhcpRange8 = "8,10.0.8.2,10.0.8.254,255.255.255.0,24h"
 dhcpRange9 = "9,10.0.9.2,10.0.9.254,255.255.255.0,24h"
 dhcpRange10 = "10,10.0.10.2,10.0.10.254,255.255.255.0,24h"
 ```
+where the `dhcpRange*` parameter configures the IP allocation settings for the DHCP server. The first setting denotes the VLAN index. The second and third settings the pool of IP addresses. The last setting denotes the lease time for the allocated IP address.
 
-where `dhcpBinPath` sets the absolute path to the `dnsmasq` executable (for OpenWRT systems this path is `/etc/init.d/dnsmasq`), `dhcpConfigPath` is the absolute path to the `dnsmasq` configuration file (for non OpenWRT this file is generated by `edgesec`), `dhcpLeasefilePath` is the absolute path to the IP leases file and `dhcpScriptPath` is teh absolute path to the DHCP control script file, which has the role of sending the allocated IP address to the `edgesec`. For `dnsmasq` the control script file is as follows:
+For `dnsmasq` the control script file is as follows:
 
 ```bash
 #!/bin/sh\n"
@@ -159,4 +176,3 @@ echo "Sending $str ..."
 ```
 
 where the `sockpath` variable is the absolute path to the supervisor control socket. The above script is executed by the `dnsmasq` process with three input parameters are: device MAC address, allocated IP address and allocation type. More details for the parameters [here](https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob;f=dnsmasq.conf.example;h=2047630802967d4dc5d4e0da881e517044136825;hb=HEAD). The script sends the `SET_IP` command with the three parameters to the supervisor control socket using `netcat` or `socat`, whichever is installed.
-The `dhcpRange*` parameter configures the IP allocation settings for the DHCP server. The first setting denotes the VLAN index. The second and third settings the pool of IP addresses. The last setting denotes the lease time for the allocated IP address.

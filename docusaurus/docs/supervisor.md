@@ -7,11 +7,12 @@ The supervisor service is the API on top of the network management service. It a
 
 ```ini
 [supervisor]
+# Sets the UDP port
 supervisorControlPort = 32001
+# Sets the absolute path to the UNIX domain socket
 supervisorControlPath = "/tmp/edgesec-control-server"
 ```
-
-where `supervisorControlPort` sets the UDP port and `supervisorControlPath` sets the absolute path to the UNIX domain socket. For instance by using the `netcat` utility one can send the `GET_MAP 11:22:33:44:55:66` command to the supervisor's UNIX domain socket located at `/tmp/edgesec-control-server` as follows:
+For instance by using the `netcat` utility one can send the `GET_MAP 11:22:33:44:55:66` command to the supervisor's UNIX domain socket located at `/tmp/edgesec-control-server` as follows:
 
 ```bash
 echo -n "GET_MAP 11:22:33:44:55:66" | nc -uU /tmp/edgesec-control-server -w2 -W1.

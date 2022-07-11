@@ -3,13 +3,14 @@ slug: capture
 title: Capture Service
 ---
 
-The network capture service has the purpose of monitoring network traffic for each connected device. It can be configured to execute custom middlewares. The packet capture implements the actual network sniffing process. Currently, it uses the [libpcap library](https://github.com/the-tcpdump-group/libpcap). However, it also allows interfacing with `PF_RING` or similar.
+The network capture service has the purpose of monitoring network traffic for each connected device. It can be configured to execute custom middlewares. The packet capture implements the actual network sniffing process. Currently, it uses the [libpcap library](https://github.com/the-tcpdump-group/libpcap). However, it also allows interfacing with [PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) or similar.
 
 The capture service can be configured with the below options:
 ```ini
 # absolute path to the capture SQLite db used by the middlewares
 captureDbPath = "/path_to_capture/capture.sqlite"
 # the capture filter for the libpcap library
+# example filter="src net 10.0 and dst net 10.0" 
 filter = ""
 # libpcap options, see https://www.tcpdump.org/manpages/pcap.3pcap.html
 # if true, captures all data on the LAN interface
