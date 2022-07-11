@@ -32,7 +32,11 @@ struct capture_middleware {
   const char *const name;
 };
 ```
-Every middleware needs to define three functions `init`, `process` and `free`. `init` function initialises the middleware, configures the event loop structures or creates new tables in the capture database. The `process` function receives as input the captured packets and does the required processing. Finally, the `free` function frees the allocated memory and removes the created tables if needed.
+Every middleware needs to define three functions `init`, `process` and `free`.
+
+ - The `init` function initialises the middleware, configures the event loop structures and/or creates new tables in the capture database.
+ - The `process` function receives as input the captured packets and does the required processing.
+ - Finally, the `free` function frees the allocated memory and removes the created tables if needed.
 
 To add a middleware, the user can create a subfolder in the [`src/capture/middlewares` folder](https://github.com/nqminds/edgesec/tree/main/src/capture/middlewares) with the name `example_middleware` and add the main include file `example_middleware.h` with the contents:
 ```c
