@@ -3,7 +3,7 @@ slug: capture
 title: Capture Service
 ---
 
-The network capture service has the purpose of monitoring network traffic for each connected device and it executes the configured middlewares. The packet capture implements the actual network sniffing process. Currently it uses the pcap library. But it also allow interfacing with PF_RING or similar.
+The network capture service has the purpose of monitoring network traffic for each connected device. It can be configured to execute custom middlewares. The packet capture implements the actual network sniffing process. Currently, it uses the [libpcap library](https://github.com/the-tcpdump-group/libpcap). However, it also allows interfacing with `PF_RING` or similar.
 
 The capture service can be configured with the below options:
 ```ini
