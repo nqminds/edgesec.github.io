@@ -16,7 +16,6 @@ apDetect = false
 generateSsid = true
 allocateVlans = true
 defaultOpenVlanId = 0
-quarantineVlanId = 10
 execAp = false
 execRadius = true
 execDhcp = true
@@ -173,10 +172,6 @@ If set to `true`, `edgesec` will randomly assign a VLAN ID to a newly connected 
 ### defaultOpenVlanId (integer)
 
 The default VLAN ID positive integer number assigned to new devices if `allowAllConnections` flag is set to `true`.
-
-### quarantineVlanId (integer)
-
-The VLAN ID assigned to devices that are quarantined.
 
 ### execAp (boolean)
 
