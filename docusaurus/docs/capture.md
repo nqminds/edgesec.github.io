@@ -7,13 +7,19 @@ The network capture service has the purpose of monitoring network traffic for ea
 
 The capture service can be configured with the below options:
 ```ini
+# absolute path to the capture SQLite db used by the middlewares
 captureDbPath = "/path_to_capture/capture.sqlite"
+# the capture filter for the libpcap library
 filter = ""
+# libpcap options, see https://www.tcpdump.org/manpages/pcap.3pcap.html
+# if true, captures all data on the LAN interface
 promiscuous = false
+# libpcap buffer timeout in milliseconds
 bufferTimeout = 10
+# enables libpcap immediate mode if true (disabled buffering)
+# see https://www.tcpdump.org/manpages/pcap_set_immediate_mode.3pcap.html
 immediate = false
 ```
-where `captureDbPath` sets the absolute path to the capture SQLite db used by the middlewares, filter sets the capture filter for the pcap library, `promiscuous`, `bufferTimeout` and `immediate` are additional settings used by the pcap libray to control speed of capture, etc.
 
 # Middlewares
 
