@@ -168,7 +168,7 @@ GET_MAP mac_address
 
 where `mac_address` is the MAC address.
 
-Output: on success it returns a strings with the following format
+Output: on success it returns a string with the following format
 
 ```
 allowed, mac, primary, secondary, vlanid, nat, label, id, len, timestamp, status
