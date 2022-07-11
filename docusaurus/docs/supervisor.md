@@ -299,7 +299,7 @@ Output: the returned value encoded as url base64, `FAIL` - on failure.
 
 ## GEN_RANDKEY command
 
-Generate a a random key of given size and store it in the crypt store.
+Generate a random key of given size and store it in the crypt store.
 
 Usage:
 
