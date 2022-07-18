@@ -1,3 +1,7 @@
+## docusaurus specific .gitignore files
+.eslintcache
+.docusaurus
+
 # Logs
 logs
 *.log
