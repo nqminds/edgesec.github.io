@@ -46,10 +46,10 @@ $ npm run pdf
 
 ### Deployment
 
-Make a pull request to the `master` branch of the GitHub repo.
+Make a pull request to the `main` branch of the GitHub repo.
 
 The GitHub Actions CI script will automatically test that your changes will
-compile correctly. You can then merge into `master`, where another GitHub
+compile correctly. You can then merge into `main`, where another GitHub
 Actions CI run will deploy this website using GitHub Pages.
 
 ### Adding Pages
@@ -83,11 +83,11 @@ folder, if you want to host them on the website.
 Their url would be the same as their path in the static folder.
 
 E.g., if you place an image in
-[./static/images/safe-box.svg](./static/images/safe-box.svg), you can show
-it as a markdown image by entering (replaced `/static/` with `/ManySecured/`):
+[./static/img/logo.svg](./static/img/logo.svg), you can show
+it as a markdown image by entering (replaced `/static/` with `/`):
 
 ```markdown
-![My example image](/ManySecured/images/safe-box.svg)
+![My example image](/img/logo.svg)
 ```
 
 #### Adding to the sidebar
@@ -98,8 +98,8 @@ sidebar, by editing [`./sidebars.js`](./sidebars.js). You should insert the
 
 By default, this id will be the path to your markdown file in the docs folder.
 e.g. the id of
-[`./docs/tdx-restful-api/nqm-core-query.md`](./docs/tdx-restful-api/nqm-core-query.md)
-is `tdx-restful-api/nqm-core-query`.
+[`./docs/about.md`](./docs/about.md)
+is `about`.
 
 #### Testing and deploying the page
 
