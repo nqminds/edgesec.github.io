@@ -71,7 +71,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/nqminds/docusaurus-template/edit/master/",
+            "https://github.com/nqminds/edgesec.info/edit/main/",
           remarkPlugins: [
             // renders all mermaid code-blocks found in markdown files
             [require("remark-mermaid-dataurl"), {}],
