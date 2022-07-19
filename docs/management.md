@@ -158,11 +158,11 @@ where the `dhcpRange*` parameter configures the IP allocation settings for the D
 For `dnsmasq` the control script file is as follows:
 
 ```bash
-#!/bin/sh\n"
+#!/bin/sh
 sockpath="/path_to_supervisor"
 str="SET_IP $1 $2 $3"
 
-nccheck=`nc -help 2>&1 >/dev/null | grep 'OpenBSD netcat'`
+nccheck="$(nc -help 2>&1 >/dev/null | grep 'OpenBSD netcat')"
 if [ -z "$nccheck" ]
 then
    echo "Using socat"
