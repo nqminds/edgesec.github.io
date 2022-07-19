@@ -132,4 +132,4 @@ endif ()
 ```
 in `capture/CMakeLists.txt`.
 
-The capture middleware will execute every defined middleware sequentially. First, it will execute the `init` functions. Then for every packet it will execute all `process` functions and finally, it will run every `free` function.
+The capture middleware will execute every defined middleware sequentially. First, it will execute the `init` functions. Then, for every packet it will execute all `process` functions and finally, it will run every `free` function.

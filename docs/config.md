@@ -135,7 +135,7 @@ The configuration file is based on the `ini` file type format. Each parameter in
 
 ## [system] group
 
-The system group contains all the parameters that are reponsible to configure the `edgesec` system tool paths and running of services.
+The system group contains all the parameters that are responsible to configure the `edgesec` system tool paths and run the edgesec services.
 
 ### binPath (string)
 
@@ -219,7 +219,7 @@ The capture group contains all the parameters that are reponsible to configure t
 
 ### captureDbPath (string)
 
-The absolute path to the `capture` SQLite db used by the middlewares.
+The absolute path to the `capture` SQLite db used by the capture middlewares.
 
 ### filter (string)
 
@@ -387,7 +387,8 @@ The RADIUS server password used by the clients.
 
 ## [nat] group
 
-The nat group defines the parameter for the interface to access the external network.
+The nat group defines the parameters for the interface to access the external network
+using [network address translation (NAT)](https://en.wikipedia.org/wiki/Network_address_translation).
 
 ### natBridge (string)
 
@@ -419,11 +420,11 @@ The `mdns` service filter string used by pcap library to track internal IP conne
 
 ## [firewall] group
 
-Configres the `firewall` module.
+Configures the `firewall` module.
 
 ### firewallBinPath (string)
 
-The absolute path to the firewal configuration executable (specified for OpenWRT systems).
+The absolute path to the firewall executable (specified for OpenWRT systems).
 
 ## [dhcp] group
 

@@ -3,7 +3,7 @@ slug: supervisor
 title: Supervisor Service
 ---
 
-The supervisor service is the API on top of the network management service. It allows creating bridges, assigning NAT access to devices and gives access to the crypt service by providing basic cryptographic functionalities for a user/device. The supervisor service can be accessed using a UDP or a UNIX domain connection by configurig the following parameters from `config.ini`:
+The supervisor service is the API on top of the network management service. It allows creating bridges, assigning NAT access to devices and gives access to the crypt service by providing basic cryptographic functionalities for a user/device. The supervisor service can be accessed using a UDP or a UNIX domain connection by configuring the following parameters from `config.ini`:
 
 ```ini
 [supervisor]

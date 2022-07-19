@@ -6,7 +6,7 @@ title: Crypt Service
 The crypt service service implements a key/value store for all other services to store and retrieve encrypted keys or data. To encrypt data the crypt service generates keys that are encrypted using the hardware secure element or a user supplied passphrase.
 
 # Store DB
-The crypt service is implemented as a sqlite database (the path is set by the `config.ini` parameter `cryptDbPath`), which contains two tables secrets and store.
+The crypt service is implemented as a sqlite database (the path is set by the `config.ini` parameter `cryptDbPath`), which contains two tables: `secrets` and `store`.
 
 The schema for the secrets table is as follows:
 ```sql
@@ -24,7 +24,7 @@ An example of the secrets table row is given below:
 
 The `value`, `salt` and `iv` are base64 encoded.
 
-When a user or service wants to store a key/value she will need to provide and ID for the key that will be used to encrypt/decrypt the user's value. If such an ID does not exists in the secrets table, the service will randomly generate one and encrypt it using the hardware secure element or the user supplied passphrase. When the user provides the passphrase the service will generate an encryption key using the `salt` and Password-Based Key Derivation Function Password-Based Key Derivation Function 2. The derived key is not stored on the device. If the user instead uses the hardware secure element, the key derivation, encryption and decryption is done in the secure memory.
+When a user or service wants to store a key/value, they will need to provide an ID for the key that will be used to encrypt/decrypt the user's value. If such an ID does not exist in the secrets table, the service will randomly generate one and encrypt it using the hardware secure element or the user supplied passphrase. When the user provides the passphrase, the service will generate an encryption key using the `salt` and [Password-Based Key Derivation Function 2 (PBKDF2)](https://en.wikipedia.org/wiki/PBKDF2). The derived key is not stored on the device. If the user instead uses the hardware secure element, the key derivation, encryption and decryption is done in secure memory.
 
 Each key/value pair is stored in the store table with the following schema:
 ```sql
@@ -46,9 +46,9 @@ The `value` and `iv` are base64 encoded.
 Each row of the store DB contains the `id` of the key that was used to encrypt/decrypt the `value`. The encryption algorithm used is AES 256 CBC.
 
 # Secure element
-In order to enable the use of secure element one needs to set the `USE_CRYPTO_SERVICE` and `USE_*_HSM`,  which corresponds to a particular implementation of the secure element API.
+In order to enable the use of secure element one needs to set the `USE_CRYPTO_SERVICE` and `USE_*_HSM` options in CMake when compiling edgesec,  which corresponds to a particular implementation of the secure element API.
 
-In order to add an aditional implementation of a secure hardware element one can use the generic driver interface `generec_hsm_drive.h` as a template. The generic drive interface defines the context:
+In order to add an aditional implementation of a secure hardware element, one can use the generic driver interface `generec_hsm_drive.h` as a template. The generic driver interface defines the context:
 
 ```c
 struct hsm_context {
