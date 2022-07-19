@@ -14,7 +14,7 @@ The network management comprises the following services:
 
 ## The Subnet service
 
-This service creates subnets and maps VLAN IDs to a subnet IP range. It uses the Netlink protocol library suite to access network kernel functionality from the user space to setuo network interfaces. In order to use the Netlink library the user has to enable `USE_NETLINK_SERVICE`. If the Netlink library is not available the user can chose `USE_GENERIC_IP_SERVICE`, which uses the `ip` command to configure the network interfaces. Alternatively, on OpenWRT systems the user can enable `USE_UCI_SERVICE`, which uses the `uci` API to manage the settings for network, firewal, dhcp, etc.
+This service creates subnets and maps VLAN IDs to a subnet IP range. It uses the Netlink protocol library suite to access network kernel functionality from the user space to setup network interfaces. In order to use the Netlink library, the user has to enable `USE_NETLINK_SERVICE` in CMake when compiling edgesec. If the Netlink library is not available the user can chose `USE_GENERIC_IP_SERVICE`, which uses the `ip` command to configure the network interfaces. Alternatively, on OpenWRT systems the user can enable `USE_UCI_SERVICE`, which uses the `uci` API to manage the settings for network, firewall, dhcp, etc.
 
 The subnet configuration is given in `config.ini` as follows:
 
@@ -56,7 +56,7 @@ $ ip a show dev br8
 
 ## The RADIUS server
 
-The RADIUS server has the role of authorising devices that want to connect to software AP. The server uses the RADIUS protocol ([RFC2865](https://datatracker.ietf.org/doc/html/rfc2865)) to send access request with specific VLAN configuration or acess reject. For instance when a device with the MAC address `11:22:33:44:55:66` wants to connect to the sofware WIFI AP the radius server will return `Access-Accept` code with the corresponding VLAN attribute. Subsequently the software AP will assign to the device with the MAC `11:22:33:44:55:66` the interface that has the cooresponding VLAN given by the `Access-Accept` status code attribute.
+The RADIUS server has the role of authorising devices that want to connect to software AP. The server uses the RADIUS protocol ([RFC2865](https://datatracker.ietf.org/doc/html/rfc2865)) to send access requests with specific VLAN configuration to receive an access/reject. For instance, when a device with the MAC address `11:22:33:44:55:66` wants to connect to the software WiFi AP, the radius server will return an `Access-Accept` code with the corresponding VLAN attribute. Subsequently, the software AP will assign the device with the MAC `11:22:33:44:55:66` the interface that has the corresponding VLAN given by the `Access-Accept` status code attribute.
 
 The `config.ini` parameters for the RADIUS server are as follows:
 
@@ -158,11 +158,11 @@ where the `dhcpRange*` parameter configures the IP allocation settings for the D
 For `dnsmasq` the control script file is as follows:
 
 ```bash
-#!/bin/sh\n"
+#!/bin/sh
 sockpath="/path_to_supervisor"
 str="SET_IP $1 $2 $3"
 
-nccheck=`nc -help 2>&1 >/dev/null | grep 'OpenBSD netcat'`
+nccheck="$(nc -help 2>&1 >/dev/null | grep 'OpenBSD netcat')"
 if [ -z "$nccheck" ]
 then
    echo "Using socat"
@@ -175,4 +175,4 @@ fi
 echo "Sending $str ..."
 ```
 
-where the `sockpath` variable is the absolute path to the supervisor control socket. The above script is executed by the `dnsmasq` process with three input parameters are: device MAC address, allocated IP address and allocation type. More details for the parameters [here](https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob;f=dnsmasq.conf.example;h=2047630802967d4dc5d4e0da881e517044136825;hb=HEAD). The script sends the `SET_IP` command with the three parameters to the supervisor control socket using `netcat` or `socat`, whichever is installed.
+where the `sockpath` variable is the absolute path to the supervisor control socket. The above script is executed by the `dnsmasq` process with three input parameters: device MAC address, allocated IP address and allocation type. See [dnsmasq.conf.example docs for more details for the parameters](https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob;f=dnsmasq.conf.example;h=2047630802967d4dc5d4e0da881e517044136825;hb=HEAD). The script sends the `SET_IP` command with the three parameters to the supervisor control socket using `netcat` or `socat`, whichever is installed.

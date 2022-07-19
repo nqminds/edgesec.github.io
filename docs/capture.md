@@ -121,9 +121,15 @@ Then the user needs to add the option `option(USE_EXAMPLE_MIDDLEWARE "Use the ex
 # write your CMakeLists.txt file to compile your middleware
 add_subdirectory(./middlewares/example_middleware)
 if (USE_EXAMPLE_MIDDLEWARE)
-  edgesecAddCaptureMiddleware(MIDDLEWARE_TARGET example_middleware MIDDLEWARE_STRUCT example_middleware)
+  edgesecAddCaptureMiddleware(
+    # the name of your middleware in your CMakeLists.txt file
+    MIDDLEWARE_TARGET example_middleware
+    # the name of your middleware in your `extern struct capture_middleware ...`
+    # in your middleware's C header file
+    MIDDLEWARE_STRUCT example_middleware
+  )
 endif ()
 ```
 in `capture/CMakeLists.txt`.
 
-The capture middleware will execute every defined middleware sequentially. First, it will execute the `init` functions. Then for every packet it will execute all `process` functions and finally, it will run every `free` function.
+The capture middleware will execute every defined middleware sequentially. First, it will execute the `init` functions. Then, for every packet it will execute all `process` functions and finally, it will run every `free` function.
