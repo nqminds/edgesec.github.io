@@ -10,6 +10,12 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  height: 40vh;
+}
+
+.heroBanner > div {
+  position: absolute;
+  left: 00%;
 }
 
 @media screen and (max-width: 966px) {
@@ -22,6 +28,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+}
+
+.buttons > a {
+  border: 2px solid #fff;
+  border-radius: 50px;
 }
 
 .features {
@@ -29,6 +41,7 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  height: 40vh;
 }
 
 .featureImage {
@@ -36,9 +49,26 @@
   width: 200px;
 }
 
+.titleContainer {
+  position: absolute;
+  right: 0%;
+  z-index: 3;
+}
+
+.shadeBox {
+  position: relative;
+  background-color: rgba(126, 126, 126, 0.5);
+  z-index: 2;
+  padding: 1rem;
+  width: 30%;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  border-radius: 20px;
+}
+
 .bannerBox {
   width: 100%;
-  overflow: visible;
+  z-index: 1;
 }
 
 .bannerContainer {
