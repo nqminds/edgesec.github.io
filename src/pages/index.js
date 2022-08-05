@@ -7,6 +7,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import ActivityGraph from "./components/activity-graph/activity-graph";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const features = [
   {
@@ -90,7 +91,9 @@ function Home() {
             </div>
           </div>
         </div>
-        <ActivityGraph />
+        <BrowserOnly>
+          {() => <ActivityGraph />}
+        </BrowserOnly>
       </header>
       <main>
         {features && features.length > 0 && (
