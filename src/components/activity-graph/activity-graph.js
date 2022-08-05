@@ -1,6 +1,6 @@
 import React, {useRef, useState, useEffect} from "react";
 import clsx from "clsx";
-import styles from "../../styles.module.css";
+import styles from "../../pages/styles.module.css";
 
 import useDimensions from "react-cool-dimensions";
 import {ForceGraph3D} from "react-force-graph";
