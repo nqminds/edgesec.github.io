@@ -31,6 +31,11 @@
   color: white;
 }
 
+.buttons > a {
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+
 .features {
   display: flex;
   align-items: center;

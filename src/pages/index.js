@@ -75,11 +75,11 @@ function Home() {
         <div className={styles.titleContainer}>
           <div className={styles.shadeBox}>
             <h1 className="hero__title">{siteConfig.title}</h1>
-            <p className="hero__subtitle">{siteConfig.tagline}</p>
+            <h2 className="hero__subtitle">{siteConfig.tagline}</h2>
             <div className={styles.buttons}>
               <Link
                 className={clsx(
-                "button button--outline button--secondary button--lg",
+                "button button--outline button--lg",
                 styles.getStarted,
               )}
                 to={useBaseUrl("docs/")}
