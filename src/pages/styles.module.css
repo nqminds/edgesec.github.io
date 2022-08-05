@@ -10,7 +10,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: 40vh;
+  height: 50vh;
 }
 
 .heroBanner > div {
@@ -41,12 +41,12 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .titleContainer {
@@ -74,6 +74,6 @@
 .bannerContainer {
   display: flex;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   overflow: visible;
 }
