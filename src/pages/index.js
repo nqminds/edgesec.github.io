@@ -6,7 +6,6 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import ActivityGraph from "../components/activity-graph/activity-graph";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const features = [
@@ -91,8 +90,11 @@ function Home() {
             </div>
           </div>
         </div>
-        <BrowserOnly>
-          {() => <ActivityGraph />}
+        <BrowserOnly fallback={<div>Loading...</div>}>
+          {() => {
+            const ActivityGraph = require("../components/activity-graph/activity-graph").default;
+            return <ActivityGraph />;
+          }}
         </BrowserOnly>
       </header>
       <main>
