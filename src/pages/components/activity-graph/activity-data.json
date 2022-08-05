@@ -1,0 +1,3222 @@
+{
+  "nodes": [
+    {
+      "id": "0.0.0.0",
+      "name": "0.0.0.0",
+      "color": "#9c27b0",
+      "group": "0.0.0.0"
+    },
+    {
+      "id": "255.255.255.255",
+      "name": "255.255.255.255",
+      "color": "#009688",
+      "group": "Broadcast address"
+    },
+    {
+      "id": "10.0.4.1",
+      "name": "10.0.4.1",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "10.0.4.191",
+      "name": "10.0.4.191",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "74.125.193.94",
+      "name": "74.125.193.94",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.103",
+      "name": "74.125.193.103",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.203.97",
+      "name": "209.85.203.97",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.101",
+      "name": "74.125.193.101",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.203.188",
+      "name": "209.85.203.188",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "31.13.73.53",
+      "name": "31.13.73.53",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.0.252.172",
+      "name": "52.0.252.172",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "216.239.36.127",
+      "name": "216.239.36.127",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.4.17",
+      "name": "10.0.4.17",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "224.0.0.22",
+      "name": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "224.0.0.251",
+      "name": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "34.122.121.32",
+      "name": "34.122.121.32",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "35.232.111.17",
+      "name": "35.232.111.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "239.255.255.250",
+      "name": "239.255.255.250",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "89.19.64.36",
+      "name": "89.19.64.36",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.113",
+      "name": "74.125.193.113",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.227.173.122",
+      "name": "13.227.173.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "185.151.204.7",
+      "name": "185.151.204.7",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "34.95.80.122",
+      "name": "34.95.80.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.155",
+      "name": "74.125.193.155",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "130.211.34.183",
+      "name": "130.211.34.183",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.156",
+      "name": "74.125.193.156",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "34.95.97.3",
+      "name": "34.95.97.3",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.100",
+      "name": "74.125.193.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "34.120.200.194",
+      "name": "34.120.200.194",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.227.173.72",
+      "name": "13.227.173.72",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.95",
+      "name": "74.125.193.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.227.173.33",
+      "name": "13.227.173.33",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.202.113",
+      "name": "209.85.202.113",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "104.26.11.209",
+      "name": "104.26.11.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "44.196.217.90",
+      "name": "44.196.217.90",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "87.248.114.12",
+      "name": "87.248.114.12",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "120.76.245.99",
+      "name": "120.76.245.99",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.138",
+      "name": "74.125.193.138",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.203.95",
+      "name": "209.85.203.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.227.171.68",
+      "name": "13.227.171.68",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.216.30.14",
+      "name": "52.216.30.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "224.0.0.1",
+      "name": "224.0.0.1",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.6.1",
+      "name": "10.0.6.1",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "10.0.6.198",
+      "name": "10.0.6.198",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "34.205.96.244",
+      "name": "34.205.96.244",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.217.105.212",
+      "name": "52.217.105.212",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.104",
+      "name": "74.125.193.104",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "87.248.114.11",
+      "name": "87.248.114.11",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "35.156.160.91",
+      "name": "35.156.160.91",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.29.0.171",
+      "name": "52.29.0.171",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "3.67.183.228",
+      "name": "3.67.183.228",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.224.128.126",
+      "name": "13.224.128.126",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.218.106.184",
+      "name": "52.218.106.184",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "18.196.142.136",
+      "name": "18.196.142.136",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "18.197.183.192",
+      "name": "18.197.183.192",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.224.128.2",
+      "name": "13.224.128.2",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "172.253.116.95",
+      "name": "172.253.116.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.2.1",
+      "name": "10.0.2.1",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "10.0.2.209",
+      "name": "10.0.2.209",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "18.185.182.159",
+      "name": "18.185.182.159",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "3.64.85.28",
+      "name": "3.64.85.28",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "18.158.116.78",
+      "name": "18.158.116.78",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.202.100",
+      "name": "209.85.202.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.147",
+      "name": "74.125.193.147",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.188",
+      "name": "74.125.193.188",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.87.105.68",
+      "name": "52.87.105.68",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "54.146.44.129",
+      "name": "54.146.44.129",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "18.192.43.219",
+      "name": "18.192.43.219",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "3.121.131.36",
+      "name": "3.121.131.36",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.106",
+      "name": "74.125.193.106",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.120.89.84",
+      "name": "226.120.89.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.121.84.83",
+      "name": "226.121.84.83",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.122.49.48",
+      "name": "226.122.49.48",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.64.6.6",
+      "name": "226.64.6.6",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.65.165.138",
+      "name": "226.65.165.138",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.66.251.51",
+      "name": "226.66.251.51",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.67.117.116",
+      "name": "226.67.117.116",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.68.114.114",
+      "name": "226.68.114.114",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.69.115.105",
+      "name": "226.69.115.105",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.0.16.16",
+      "name": "226.0.16.16",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.1.125.103",
+      "name": "226.1.125.103",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.2.235.174",
+      "name": "226.2.235.174",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.3.145.186",
+      "name": "226.3.145.186",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.4.246.6",
+      "name": "226.4.246.6",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.5.225.8",
+      "name": "226.5.225.8",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.6.13.14",
+      "name": "226.6.13.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.7.125.121",
+      "name": "226.7.125.121",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.8.136.211",
+      "name": "226.8.136.211",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.9.223.70",
+      "name": "226.9.223.70",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.10.172.104",
+      "name": "226.10.172.104",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.32.14.14",
+      "name": "226.32.14.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.33.71.92",
+      "name": "226.33.71.92",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.34.238.121",
+      "name": "226.34.238.121",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.35.85.69",
+      "name": "226.35.85.69",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.36.80.90",
+      "name": "226.36.80.90",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.37.107.50",
+      "name": "226.37.107.50",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.38.85.66",
+      "name": "226.38.85.66",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.39.90.84",
+      "name": "226.39.90.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.40.117.52",
+      "name": "226.40.117.52",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.41.52.100",
+      "name": "226.41.52.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "3.65.95.68",
+      "name": "3.65.95.68",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.17",
+      "name": "74.125.193.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "172.253.116.18",
+      "name": "172.253.116.18",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.202.95",
+      "name": "209.85.202.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.132",
+      "name": "74.125.193.132",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "3.120.92.134",
+      "name": "3.120.92.134",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.107.43.14",
+      "name": "13.107.43.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "35.224.170.84",
+      "name": "35.224.170.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "3.66.153.75",
+      "name": "3.66.153.75",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "99.86.112.112",
+      "name": "99.86.112.112",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "31.13.73.18",
+      "name": "31.13.73.18",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.203.100",
+      "name": "209.85.203.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "3.5.68.139",
+      "name": "3.5.68.139",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.139",
+      "name": "74.125.193.139",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "18.194.10.142",
+      "name": "18.194.10.142",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "99.86.112.111",
+      "name": "99.86.112.111",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.33.115.236",
+      "name": "226.33.115.236",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.34.199.246",
+      "name": "226.34.199.246",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.36.110.71",
+      "name": "226.36.110.71",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.37.110.101",
+      "name": "226.37.110.101",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.38.78.83",
+      "name": "226.38.78.83",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.39.48.116",
+      "name": "226.39.48.116",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.40.57.54",
+      "name": "226.40.57.54",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.41.83.109",
+      "name": "226.41.83.109",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.58.249.45",
+      "name": "52.58.249.45",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "99.86.112.36",
+      "name": "99.86.112.36",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.33.113.170",
+      "name": "226.33.113.170",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.34.154.93",
+      "name": "226.34.154.93",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.36.78.122",
+      "name": "226.36.78.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.37.86.76",
+      "name": "226.37.86.76",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.38.56.76",
+      "name": "226.38.56.76",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.39.101.53",
+      "name": "226.39.101.53",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.40.110.49",
+      "name": "226.40.110.49",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.41.53.65",
+      "name": "226.41.53.65",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.19",
+      "name": "74.125.193.19",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.18",
+      "name": "74.125.193.18",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.33.23.80",
+      "name": "226.33.23.80",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.34.66.161",
+      "name": "226.34.66.161",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.36.87.109",
+      "name": "226.36.87.109",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.37.106.120",
+      "name": "226.37.106.120",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.39.81.86",
+      "name": "226.39.81.86",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.40.117.51",
+      "name": "226.40.117.51",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.41.114.57",
+      "name": "226.41.114.57",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "226.38.86.102",
+      "name": "226.38.86.102",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.202.139",
+      "name": "209.85.202.139",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "216.239.35.0",
+      "name": "216.239.35.0",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.6.209",
+      "name": "10.0.6.209",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "3.213.26.153",
+      "name": "3.213.26.153",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.83",
+      "name": "74.125.193.83",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.102",
+      "name": "74.125.193.102",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "13.107.42.14",
+      "name": "13.107.42.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.7.1",
+      "name": "10.0.7.1",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "10.0.7.191",
+      "name": "10.0.7.191",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "172.253.116.103",
+      "name": "172.253.116.103",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "8.8.8.8",
+      "name": "8.8.8.8",
+      "color": "#fdd835",
+      "group": "DNS server"
+    },
+    {
+      "id": "8.8.4.4",
+      "name": "8.8.4.4",
+      "color": "#fdd835",
+      "group": "DNS server"
+    },
+    {
+      "id": "104.244.42.2",
+      "name": "104.244.42.2",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "104.244.42.70",
+      "name": "104.244.42.70",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "151.101.60.159",
+      "name": "151.101.60.159",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "151.101.16.158",
+      "name": "151.101.16.158",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.7.39",
+      "name": "10.0.7.39",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "10.0.7.40",
+      "name": "10.0.7.40",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "34.248.150.55",
+      "name": "34.248.150.55",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.8.1",
+      "name": "10.0.8.1",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "10.0.8.140",
+      "name": "10.0.8.140",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "10.0.8.141",
+      "name": "10.0.8.141",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    },
+    {
+      "id": "91.189.91.157",
+      "name": "91.189.91.157",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "63.34.91.196",
+      "name": "63.34.91.196",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.84",
+      "name": "74.125.193.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "172.253.116.99",
+      "name": "172.253.116.99",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "104.103.244.30",
+      "name": "104.103.244.30",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "216.58.212.206",
+      "name": "216.58.212.206",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "64.233.167.188",
+      "name": "64.233.167.188",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.202.101",
+      "name": "209.85.202.101",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "74.125.193.93",
+      "name": "74.125.193.93",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "52.72.188.163",
+      "name": "52.72.188.163",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "104.18.29.31",
+      "name": "104.18.29.31",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "20.189.173.3",
+      "name": "20.189.173.3",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "104.244.42.130",
+      "name": "104.244.42.130",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "104.244.42.6",
+      "name": "104.244.42.6",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "209.85.203.138",
+      "name": "209.85.203.138",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "149.154.167.92",
+      "name": "149.154.167.92",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "44.192.202.122",
+      "name": "44.192.202.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "id": "10.0.4.209",
+      "name": "10.0.4.209",
+      "color": "#4caf50",
+      "group": "10.x.x.x"
+    }
+  ],
+  "links": [
+    {
+      "source": "0.0.0.0",
+      "target": "255.255.255.255",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.4.1",
+      "target": "10.0.4.191",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "10.0.4.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.94",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.94",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.103",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.103",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.203.97",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.203.97",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.101",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.101",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.203.188",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.203.188",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "31.13.73.53",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "31.13.73.53",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "52.0.252.172",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.0.252.172",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "216.239.36.127",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "216.239.36.127",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.1",
+      "target": "10.0.4.17",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.4.17",
+      "target": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.17",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.17",
+      "target": "10.0.4.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.4.17",
+      "target": "34.122.121.32",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.17",
+      "target": "35.232.111.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "35.232.111.17",
+      "target": "10.0.4.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.17",
+      "target": "239.255.255.250",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "89.19.64.36",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "89.19.64.36",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.113",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.113",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.227.173.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.227.173.122",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "185.151.204.7",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "185.151.204.7",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "34.95.80.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "34.95.80.122",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.155",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.155",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "130.211.34.183",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "130.211.34.183",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.156",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.156",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "34.95.97.3",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "34.95.97.3",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.100",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "34.120.200.194",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "34.120.200.194",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.227.173.72",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.227.173.72",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.95",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.227.173.33",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.227.173.33",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.202.113",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.202.113",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "104.26.11.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "104.26.11.209",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "44.196.217.90",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "87.248.114.12",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "87.248.114.12",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "44.196.217.90",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "120.76.245.99",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "120.76.245.99",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.138",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.138",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.203.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.203.95",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.227.171.68",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.227.171.68",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "52.216.30.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.216.30.14",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "0.0.0.0",
+      "target": "224.0.0.1",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.6.1",
+      "target": "10.0.6.198",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "0.0.0.0",
+      "target": "10.0.6.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.6.198",
+      "target": "10.0.6.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.6.198",
+      "target": "34.205.96.244",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "34.205.96.244",
+      "target": "10.0.6.198",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "52.217.105.212",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.217.105.212",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.104",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.104",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "87.248.114.11",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "87.248.114.11",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "35.156.160.91",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "52.29.0.171",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "3.67.183.228",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.29.0.171",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "35.156.160.91",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.67.183.228",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.224.128.126",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.224.128.126",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "52.218.106.184",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.218.106.184",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "18.196.142.136",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "18.196.142.136",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "18.197.183.192",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "18.197.183.192",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.224.128.2",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.224.128.2",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "172.253.116.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "172.253.116.95",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.1",
+      "target": "10.0.2.209",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "224.0.0.1",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "10.0.2.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "18.185.182.159",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "18.185.182.159",
+      "target": "10.0.2.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "3.64.85.28",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.64.85.28",
+      "target": "10.0.2.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "18.158.116.78",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.202.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.202.100",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "18.158.116.78",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.147",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.188",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.147",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.188",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "52.87.105.68",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.87.105.68",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "54.146.44.129",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "54.146.44.129",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "18.192.43.219",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "18.192.43.219",
+      "target": "10.0.2.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "3.121.131.36",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.121.131.36",
+      "target": "10.0.2.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.106",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.106",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.120.89.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.121.84.83",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.122.49.48",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "255.255.255.255",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.64.6.6",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.65.165.138",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.66.251.51",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.67.117.116",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.68.114.114",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.69.115.105",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.0.16.16",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.1.125.103",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.2.235.174",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.3.145.186",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.4.246.6",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.5.225.8",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.6.13.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.7.125.121",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.8.136.211",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.9.223.70",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.10.172.104",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.32.14.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.33.71.92",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.34.238.121",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.35.85.69",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.36.80.90",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.37.107.50",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.38.85.66",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.39.90.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.40.117.52",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.41.52.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "3.65.95.68",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.65.95.68",
+      "target": "10.0.2.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.17",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "172.253.116.18",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "172.253.116.18",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.202.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.202.95",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.132",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.132",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "3.120.92.134",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.120.92.134",
+      "target": "10.0.2.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.107.43.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.107.43.14",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.17",
+      "target": "35.224.170.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "35.224.170.84",
+      "target": "10.0.4.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "3.66.153.75",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.66.153.75",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "99.86.112.112",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "99.86.112.112",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "31.13.73.18",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "31.13.73.18",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.203.100",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.203.100",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "3.5.68.139",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.5.68.139",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.139",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.139",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "18.194.10.142",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "18.194.10.142",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "99.86.112.111",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "99.86.112.111",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.33.115.236",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.34.199.246",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.36.110.71",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.37.110.101",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.38.78.83",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.39.48.116",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.40.57.54",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.41.83.109",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.2.209",
+      "target": "52.58.249.45",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.58.249.45",
+      "target": "10.0.2.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "34.122.121.32",
+      "target": "10.0.4.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "99.86.112.36",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "99.86.112.36",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.33.113.170",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.34.154.93",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.36.78.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.37.86.76",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.38.56.76",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.39.101.53",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.40.110.49",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.41.53.65",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.19",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.19",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.6.198",
+      "target": "224.0.0.1",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.18",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.18",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.33.23.80",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.34.66.161",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.36.87.109",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.37.106.120",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.39.81.86",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.40.117.51",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.41.114.57",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "226.38.86.102",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "209.85.202.139",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.202.139",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "216.239.35.0",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "216.239.35.0",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.6.1",
+      "target": "10.0.6.209",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.6.209",
+      "target": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.6.209",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.6.209",
+      "target": "10.0.6.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.6.209",
+      "target": "35.224.170.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "35.224.170.84",
+      "target": "10.0.6.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.6.209",
+      "target": "34.122.121.32",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.6.209",
+      "target": "239.255.255.250",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "34.122.121.32",
+      "target": "10.0.6.209",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "3.213.26.153",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "3.213.26.153",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.83",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.83",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "74.125.193.102",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.102",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.191",
+      "target": "13.107.42.14",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "13.107.42.14",
+      "target": "10.0.4.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "0.0.0.0",
+      "target": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.1",
+      "target": "239.255.255.250",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.1",
+      "target": "10.0.7.191",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "10.0.7.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "74.125.193.94",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.94",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "209.85.203.188",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.203.188",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "31.13.73.53",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "31.13.73.53",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "74.125.193.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.95",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.1",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "172.253.116.103",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "172.253.116.103",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "89.19.64.36",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "89.19.64.36",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "8.8.8.8",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "8.8.4.4",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "8.8.8.8",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "8.8.4.4",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "104.244.42.2",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "104.244.42.2",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "104.244.42.70",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "104.244.42.70",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "151.101.60.159",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "151.101.60.159",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "151.101.16.158",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "151.101.16.158",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "209.85.202.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.202.95",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.1",
+      "target": "10.0.7.39",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.7.1",
+      "target": "10.0.7.40",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.7.40",
+      "target": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.40",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "35.232.111.17",
+      "target": "10.0.7.40",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.40",
+      "target": "35.232.111.17",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.40",
+      "target": "10.0.7.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.7.39",
+      "target": "10.0.7.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.7.39",
+      "target": "34.248.150.55",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "34.248.150.55",
+      "target": "10.0.7.39",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.1",
+      "target": "239.255.255.250",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.1",
+      "target": "10.0.8.140",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.8.1",
+      "target": "255.255.255.255",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "35.224.170.84",
+      "target": "10.0.8.140",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.140",
+      "target": "35.224.170.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.140",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.140",
+      "target": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.140",
+      "target": "10.0.8.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.8.1",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.1",
+      "target": "10.0.8.141",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.7.39",
+      "target": "255.255.255.255",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "10.0.8.1",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "91.189.91.157",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "63.34.91.196",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "63.34.91.196",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "74.125.193.94",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.94",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "74.125.193.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.84",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.95",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "74.125.193.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "172.253.116.99",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "172.253.116.99",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.132",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "74.125.193.132",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "104.103.244.30",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "104.103.244.30",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "216.58.212.206",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "216.58.212.206",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "64.233.167.188",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "64.233.167.188",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "209.85.202.101",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.202.101",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "74.125.193.113",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.113",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "209.85.202.95",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "74.125.193.93",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.202.95",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.93",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "52.72.188.163",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "104.18.29.31",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.8.141",
+      "target": "20.189.173.3",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "20.189.173.3",
+      "target": "10.0.8.141",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "74.125.193.101",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "74.125.193.101",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "104.244.42.130",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "104.244.42.130",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "104.244.42.6",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "104.244.42.6",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "209.85.203.138",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "209.85.203.138",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "149.154.167.92",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "149.154.167.92",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.7.191",
+      "target": "44.192.202.122",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "44.192.202.122",
+      "target": "10.0.7.191",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.1",
+      "target": "10.0.4.209",
+      "color": "#2196f3",
+      "group": "Internal traffic"
+    },
+    {
+      "source": "10.0.4.209",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.209",
+      "target": "224.0.0.22",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.1",
+      "target": "239.255.255.250",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.209",
+      "target": "239.255.255.250",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.209",
+      "target": "34.122.121.32",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.209",
+      "target": "35.224.170.84",
+      "color": "#ef5350",
+      "group": "External traffic"
+    },
+    {
+      "source": "10.0.4.1",
+      "target": "224.0.0.251",
+      "color": "#ef5350",
+      "group": "External traffic"
+    }
+  ]
+}

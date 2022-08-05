@@ -5,9 +5,10 @@ import styles from "../../styles.module.css";
 import useDimensions from "react-cool-dimensions";
 import {ForceGraph3D} from "react-force-graph";
 import activityData from "./activity-data";
+import traffic from "./traffic";
 
 const grey = "#FAFAFA";
-const cameraDistance = 750;
+const cameraDistance = 250;
 
 /**
  * Device Types graph
@@ -42,12 +43,10 @@ function ActivityGraph() {
       });
       setAngle(angle + Math.PI / 300);
 
-      setCounter(((counter + 1) % (activityData.nodes && activityData.nodes.rows.length)) || 0);
-      // if (counter % 2) {
-      //   const {ip_src, ip_dst} = activityData.nodes && activityData.nodes.rows[counter] || {};
-      //   const link = graphData.links.find(({source, target}) => source.id === ip_src && target.id === ip_dst);
-      //   graphRef.current.emitParticle(link);
-      // }
+      setCounter(((counter + 1) % (traffic && traffic.rows.length)) || 0);
+      const {ip_src, ip_dst} = traffic && traffic.rows[counter] || {};
+      const link = graphData.links.find(({source, target}) => source.id === ip_src && target.id === ip_dst);
+      graphRef.current.emitParticle(link);
     }, 50);
 
     return () => clearInterval(timer);
