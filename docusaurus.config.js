@@ -1,6 +1,6 @@
 module.exports = {
   title: "EDGESEC",
-  tagline: "Secure IoT router implementation",
+  tagline: "Secure IoT Router Implementation",
   url: "https://edgesec.info",
   baseUrl: "/", // usually your repo name, must contain a trailing and starting slash
   favicon: "img/network.svg",
