@@ -81,7 +81,6 @@ function Home() {
                 className={clsx(
                 "button button--outline button--secondary button--lg",
                 styles.getStarted,
-                styles.buttonText,
               )}
                 to={useBaseUrl("docs/")}
               >
