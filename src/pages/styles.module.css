@@ -57,11 +57,13 @@
 
 .shadeBox {
   position: relative;
-  background-color: rgba(126, 126, 126, 0);
+  background-color: rgba(126, 126, 126, 0.5);
   z-index: 2;
   padding: 1rem;
   width: 30%;
   margin: 0 auto;
+  border: 5px solid #fff;
+  border-radius: 20px;
 }
 
 .bannerBox {
