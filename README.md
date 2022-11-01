@@ -36,14 +36,6 @@ You can test the build by running:
 $ npm run serve
 ```
 
-### Creating a PDF
-
-You can create a PDF using [docusaurus-pdf](https://github.com/KohheePeace/docusaurus-pdf) by running:
-
-```
-$ npm run pdf
-```
-
 ### Deployment
 
 Make a pull request to the `main` branch of the GitHub repo.
