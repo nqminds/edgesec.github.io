@@ -47,8 +47,10 @@ function Feature({imageUrl, title, description}) {
             <img className={styles.featureImg} src={imgUrl} alt={title} />
           </div>
         )}
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <div className="text--center padding-horiz--md">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );
