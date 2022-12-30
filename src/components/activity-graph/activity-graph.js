@@ -8,7 +8,7 @@ import activityData from "./activity-data";
 import traffic from "./traffic";
 
 const grey = "#FAFAFA";
-const cameraDistance = 250;
+const cameraDistance = 400;
 
 /**
  * Device Types graph
