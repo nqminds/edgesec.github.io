@@ -10,7 +10,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 const features = [
   {
     title: <>Network Control</>,
-    imageUrl: "img/network.png",
+    imageUrl: "img/network.svg",
     description: (
       <>
         Wireless network segmentation and fine gained control of connected IoT devices.
@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: <>Network Monitor</>,
-    imageUrl: "img/monitor.png",
+    imageUrl: "img/monitor.svg",
     description: (
       <>
         Traffic monitoring and detection of compromised IoT devices.
@@ -28,7 +28,7 @@ const features = [
   },
   {
     title: <>Secure Storage</>,
-    imageUrl: "img/vault.png",
+    imageUrl: "img/vault.svg",
     description: (
       <>
         Implementation of a secure key/value store on top of hardware secure storage.
