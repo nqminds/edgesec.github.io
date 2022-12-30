@@ -3,15 +3,19 @@ module.exports = {
   tagline: "Secure IoT Router Implementation",
   url: "https://edgesec.info",
   baseUrl: "/", // usually your repo name, must contain a trailing and starting slash
-  favicon: "img/network.svg",
+  favicon: "img/edgesec-favicon.png",
   organizationName: "nqmcyber", // Usually your GitHub org/user name.
   projectName: "edgesec", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: "EDGESEC",
       logo: {
         alt: "NQM Docusaurus Template Logo",
-        src: "img/network.svg",
+        src: "img/edgesec.png",
       },
       items: [
         {
@@ -31,12 +35,6 @@ module.exports = {
           to: "doxygen/", // part of the static folder, run doxygen first
           label: "Doxygen C API",
           position: "left",
-        },
-        {
-          // WARNING, if you change routeBasePath of docs, you should change this as well
-          to: "docs/about",
-          label: "About",
-          position: "right",
         },
         {
           href: "https://github.com/nqminds/edgesec",

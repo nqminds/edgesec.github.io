@@ -90,8 +90,8 @@ sidebar, by editing [`./sidebars.js`](./sidebars.js). You should insert the
 
 By default, this id will be the path to your markdown file in the docs folder.
 e.g. the id of
-[`./docs/about.md`](./docs/about.md)
-is `about`.
+[`./docs/capture.md`](./docs/capture.md)
+is `capture`.
 
 #### Testing and deploying the page
 
