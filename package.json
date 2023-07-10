@@ -9,7 +9,7 @@
     "clean": "docusaurus clear",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "lint": "eslint *.js src/",
+    "lint": "eslint *.js src/ && npx prettier . --check",
     "prepare": "husky install"
   },
   "dependencies": {
