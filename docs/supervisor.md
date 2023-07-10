@@ -12,6 +12,7 @@ supervisorControlPort = 32001
 # Sets the absolute path to the UNIX domain socket
 supervisorControlPath = "/tmp/edgesec-control-server"
 ```
+
 For instance by using the `netcat` utility one can send the `GET_MAP 11:22:33:44:55:66` command to the supervisor's UNIX domain socket located at `/tmp/edgesec-control-server` as follows:
 
 ```bash
