@@ -13,7 +13,8 @@ const features = [
     imageUrl: "img/network.svg",
     description: (
       <>
-        Wireless network segmentation and fine gained control of connected IoT devices.
+        Wireless network segmentation and fine gained control of connected IoT
+        devices.
       </>
     ),
   },
@@ -21,9 +22,7 @@ const features = [
     title: <>Network Monitor</>,
     imageUrl: "img/monitor.svg",
     description: (
-      <>
-        Traffic monitoring and detection of compromised IoT devices.
-      </>
+      <>Traffic monitoring and detection of compromised IoT devices.</>
     ),
   },
   {
@@ -31,13 +30,14 @@ const features = [
     imageUrl: "img/vault.svg",
     description: (
       <>
-        Implementation of a secure key/value store on top of hardware secure storage.
+        Implementation of a secure key/value store on top of hardware secure
+        storage.
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={styles.container}>
@@ -68,7 +68,7 @@ Feature.propTypes = {
  */
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`Homepage ${siteConfig.title}`}
@@ -81,7 +81,8 @@ function Home() {
         </div>
         <BrowserOnly fallback={<div>Loading...</div>}>
           {() => {
-            const ActivityGraph = require("../components/activity-graph/activity-graph").default;
+            const ActivityGraph =
+              require("../components/activity-graph/activity-graph").default;
             return <ActivityGraph />;
           }}
         </BrowserOnly>

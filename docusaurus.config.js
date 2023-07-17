@@ -68,8 +68,7 @@ module.exports = {
           routeBasePath: "/docs", // set to "/" if you want to link directly to docs
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/nqminds/edgesec.info/edit/main/",
+          editUrl: "https://github.com/nqminds/edgesec.info/edit/main/",
           remarkPlugins: [
             // renders all mermaid code-blocks found in markdown files
             [require("remark-mermaid-dataurl"), {}],
