@@ -48,7 +48,7 @@ function ActivityGraph() {
       setCounter((counter + 1) % (traffic && traffic.rows.length) || 0);
       const { ip_src, ip_dst } = (traffic && traffic.rows[counter]) || {};
       const link = graphData.links.find(
-        ({ source, target }) => source.id === ip_src && target.id === ip_dst
+        ({ source, target }) => source.id === ip_src && target.id === ip_dst,
       );
       graphRef.current.emitParticle(link);
     }, 50);
