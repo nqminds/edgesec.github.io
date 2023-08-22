@@ -12,6 +12,9 @@
     "lint": "eslint *.js src/ && npx prettier . --check",
     "prepare": "husky install"
   },
+  "engines": {
+    "node": "^16 || ^18 || >= 20.0.0"
+  },
   "dependencies": {
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.1",
