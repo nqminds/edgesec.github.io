@@ -43,7 +43,7 @@
     "eslint": "^8.50.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-jsdoc": "^41.1.2",
-    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-mocha": "^10.2.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
